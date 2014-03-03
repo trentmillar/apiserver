@@ -3,7 +3,9 @@ var express = /*require(__dirname + "/express-local")*//*run from local source*/
     v1 = require(__dirname + "/v1/router.js"),
 	database = require(__dirname + "/api/database.js"), // to trigger the setup
 	ping = require(__dirname + "/api/ping.js"); // to keep the app awake
-	
+
+console.log(process.env);
+
 var app = express.createServer();
 
 // Basic request preparation and stuffing post data into req
