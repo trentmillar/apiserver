@@ -5,8 +5,9 @@
  * Time: 8:03 PM
  * To change this template use File | Settings | File Templates.
  */
+var LL = LL || {};
 
-config.env = {
+LL.env = {
     PORT:3000,
     NODE_ENV:'DEV',
     local:true,
