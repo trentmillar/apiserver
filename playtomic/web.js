@@ -1,7 +1,10 @@
-var express = /*require(__dirname + "/express-local")*//*run from local source*/require("express")/*npm install express*/, 
+var config = config || {};
+
+var express = require("express")/*npm install express*/,
     querystring = require("querystring")/*built-in to node.js*/,
     v1 = require(__dirname + "/v1/router.js"),
 	database = require(__dirname + "/api/database.js"), // to trigger the setup
+    processes = require(__dirname +"/config/config.js"),
 	ping = require(__dirname + "/api/ping.js"); // to keep the app awake
 
 console.log(process.env);
